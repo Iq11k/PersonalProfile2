@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 15px;
+  padding-right: 2rem;
+  height: 5rem;
+  width: 100%;
+  position: fixed;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.experience {
+  color: #000000;
+}
+.home {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.desc {
+  color: #000000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  width: 25%;
+  background-image: url(bg.png);
+  background-size: cover;
+}
+
+.text {
+  margin-bottom: 14rem;
+  rotate: -90deg;
+  width: 100%;
+}
+
+.text h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+.photo {
+  display: flex;
+  position: relative;
+  width: 75%;
+  z-index: 2;
+}
+
+.photo img.muka {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo h1 {
+  position: absolute;
+  color: #ffffff;
+  text-align: right;
+  letter-spacing: 0.19em;
+  font-weight: 600;
+  font-size: 2rem;
+  right: 30px;
+  top: 740px;
+}
+
+.photo .comp1 {
+  position: absolute;
+  width: 30px;
+  bottom: -2rem;
+  right: 0;
+}
+
+.about {
+  background-image: url(main.png);
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  color: #ffffff;
+}
+
+.about .homebtn {
+  position: absolute;
+  height: 25px;
+  left: 4rem;
+  top: 10px;
+  z-index: 6;
+}
+
+.about .comp1 {
+  position: absolute;
+  top: 2rem;
+  height: 60px;
+  z-index: 6;
+}
+
+.about .comp2 {
+  position: absolute;
+  bottom: 0;
+  height: 35px;
+}
+
+.bio {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  width: 360px;
+  position: absolute;
+  top: 40%;
+  right: 55%;
+}
+
+.bio h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+.bio p {
+  color: #dedede;
+}
+.bio h4 {
+  font-weight: 500;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: right;
+  gap: 1rem;
+  position: absolute;
+  bottom: 15%;
+  right: 55%;
+}
+.location .comp3 {
+  height: 25px;
+}
+.loc h1 {
+  font-weight: 600;
+}
+.loc p {
+  color: #dedede;
+}
+
+.experience {
+  height: 100vh;
+}
+
+.black-font {
+  color: black;
+}
+
+.project {
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.experience,
+.project {
+  background-image: url(projectbg.png);
+  background-size: cover;
+}
+
+.experience {
+  font-weight: 400;
+  position: relative;
+}
+.experience .current {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0, -50%);
+}
+.current p {
+  color: #9e9e9e;
+}
+.current p strong {
+  color: #000000;
+}
+.current img {
+  width: 200px;
+  margin: 20px 0;
+}
+
+.mainright {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: absolute;
+  right: 2rem;
+  top: 7rem;
+}
+
+.mainright h1 {
+  font-size: 4rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: right;
+  margin-top: 1rem;
+}
+
+.section .main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.section img {
+  width: 1rem;
+}
+.section p {
+  margin-right: 2rem;
+  color: #505050;
+}
+.section ul {
+  list-style-type: none;
+  color: #9e9e9e;
+  margin-right: 1rem;
+}
+
+.project {
+  position: relative;
+}
+
+.project a {
+  text-decoration: none;
+  color: #000000;
+  margin-right: 2rem;
+  font-weight: 600;
+}
+
+.project .section p {
+  width: 700px;
+}
+
+.preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0, -50%);
+}
+
+.preview img {
+  width: 30rem;
+}
