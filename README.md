@@ -1,5 +1,5 @@
 # Personal Profile Web
 
 still on progress
-<br>
-*best for desktop
+<br><br><br>
+*Use Desktop for full version
